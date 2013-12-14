@@ -9,44 +9,44 @@ class Articulo:
     '''
     classdocs
     '''
-    def __init__(self, titulo=None,autores=None,palabrasClaves=None,resumen=None,texto=None):
+    def __init__(self, titulo=None,autores=None,palabrasclaves=None,resumen=None,texto=None):
         '''
         Constructor
         '''
         self.titulo=titulo
         self.autores=autores
-        self.palabrasClaves=palabrasClaves
+        self.palabrasClaves=palabrasclaves
         self.resumen=resumen
         self.texto=texto
         
     # Definicion de los metodos get de todos los atributos de la clase
-    def getTitulo(self):
+    def get_titulo(self):
         return self.titulo
     
-    def getAutores(self):
+    def get_autores(self):
         return self.autores
     
-    def getPalabras(self):
-        return self.palabrasClaves
+    def get_palabras(self):
+        return self.palabrasclaves
     
-    def getResumen(self):
+    def get_resumen(self):
         return self.resumen
     
-    def getTexto(self):
+    def get_texto(self):
         return self.texto
     
     # Definicion de todos los set de los atributos de la clase    
-    def setTitulo(self,titulo=None):
+    def set_titulo(self,titulo=None):
         self.titulo=titulo
 
-    def setAutores(self,autores=None):
+    def set_autores(self,autores=None):
         self.autores=autores
     
-    def setPalabras(self,palabrasClaves=None):
-        self.palabrasClaves=palabrasClaves
+    def set_palabras(self,palabrasclaves=None):
+        self.palabrasclaves=palabrasclaves
     
-    def setResumen(self,resumen=None):
+    def set_resumen(self,resumen=None):
         self.resumen=resumen
     
-    def setTexto(self,texto=None):
+    def set_texto(self,texto=None):
         self.texto=texto
