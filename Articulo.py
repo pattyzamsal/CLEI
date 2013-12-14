@@ -15,7 +15,7 @@ class Articulo:
         '''
         self.titulo=titulo
         self.autores=autores
-        self.palabrasClaves=palabrasclaves
+        self.palabrasclaves=palabrasclaves
         self.resumen=resumen
         self.texto=texto
         
