@@ -1,6 +1,6 @@
 '''
 Created on Nov 18, 2013
-
+probando
 @autores: Oscar Burguillos y Patricia Zambrano
 @carnets: 09-10118 y 09-10919
 '''
