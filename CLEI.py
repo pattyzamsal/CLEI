@@ -4,7 +4,7 @@ Created on Nov 21, 2013
 @autores: Oscar Burguillos y Patricia Zambrano
 @carnets: 09-10118 y 09-10919
 '''
-from Evaluacion import *
+from Evaluacion import Evaluacion
 
 class CLEI():
     '''

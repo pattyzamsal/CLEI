@@ -5,9 +5,9 @@ Created on Nov 20, 2013
 @carnets: 09-10118 y 09-10919
 '''
 import unittest
-from Articulo import *
-from Comite import *
-from CLEI import *
+from Articulo import Articulo
+from Comite import Comite
+from CLEI import CLEI
 
 class Test(unittest.TestCase):
 
