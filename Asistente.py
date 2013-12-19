@@ -7,7 +7,7 @@ Created on Nov 20, 2013
 from Persona import Persona
 
 # Definimos la subclase asociada a la clase Persona
-class Autor(Persona):
+class Asistente(Persona):
     '''
     classdocs
     '''

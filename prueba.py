@@ -16,133 +16,133 @@ class Test(unittest.TestCase):
         #a es un articulo cualquier para realizar la prueba
         a= Articulo('titulo',['patty@ldc','oscar@ldc'],['pal1','pal2'],'Resumen','Este es el texto')
         #Probando los get de la clase Articulos
-        assert a.getTitulo()=='titulo'
-        assert a.getAutores()==['patty@ldc','oscar@ldc']
-        assert a.getPalabras()==['pal1','pal2']
-        assert a.getResumen()=='Resumen'
-        assert a.getTexto()=='Este es el texto'
+        assert a.get_titulo()=='titulo'
+        assert a.get_autores()==['patty@ldc','oscar@ldc']
+        assert a.get_palabras()==['pal1','pal2']
+        assert a.get_resumen()=='Resumen'
+        assert a.get_texto()=='Este es el texto'
         
         #Probando los set de la clase Articulos
-        a.setTitulo('Desarrollo de BD en una red con IA')
-        assert a.getTitulo()=='Desarrollo de BD en una red con IA'
-        a.setAutores(['loco@ldc','juan@ldc'])
-        assert a.getAutores()==['loco@ldc','juan@ldc']
-        a.setPalabras(['Redes','BD','IA'])
-        assert a.getPalabras()==['Redes','BD','IA']
-        a.setResumen('Esto es un resumen')
-        assert a.getResumen()=='Esto es un resumen'
-        a.setTexto('Hola bienvenido al texto, aqui hablaremos de cosas')
-        assert a.getTexto()=='Hola bienvenido al texto, aqui hablaremos de cosas'
+        a.set_titulo('Desarrollo de BD en una red con IA')
+        assert a.get_titulo()=='Desarrollo de BD en una red con IA'
+        a.set_autores(['loco@ldc','juan@ldc'])
+        assert a.get_autores()==['loco@ldc','juan@ldc']
+        a.set_palabras(['Redes','BD','IA'])
+        assert a.get_palabras()==['Redes','BD','IA']
+        a.set_resumen('Esto es un resumen')
+        assert a.get_resumen()=='Esto es un resumen'
+        a.set_texto('Hola bienvenido al texto, aqui hablaremos de cosas')
+        assert a.get_texto()=='Hola bienvenido al texto, aqui hablaremos de cosas'
 
     # Pruebas para la clase persona
     def testPersona(self):
         # p es una persona cualquiera para realizar la prueba
         p = Persona('nombre','apellido','correo@dominio',1010,'USB','584121147980','pagina','Venezuela')
         # Probando los get de la clase Persona
-        assert p.getNombre()=='nombre'
-        assert p.getApellido()=='apellido'
-        assert p.getCorreo()=='correo@dominio'
-        assert p.getDirPostal()==1010
-        assert p.getInstitucion()=='USB'
-        assert p.getTelefono()=='584121147980'
-        assert p.getPagina()=='pagina'
-        assert p.getPais()=='Venezuela'
+        assert p.get_nombre()=='nombre'
+        assert p.get_apellido()=='apellido'
+        assert p.get_correo()=='correo@dominio'
+        assert p.get_dirpostal()==1010
+        assert p.get_institucion()=='USB'
+        assert p.get_telefono()=='584121147980'
+        assert p.get_pagina()=='pagina'
+        assert p.get_pais()=='Venezuela'
         # Probando los set de la clase Persona
-        p.setNombre('patty')
-        assert p.getNombre()=='patty'
-        p.setApellido('zambrano')
-        assert p.getApellido()=='zambrano'
-        p.setCorreo('patty@dominio')
-        assert p.getCorreo()=='patty@dominio'
-        p.setDirPostal(1040)
-        assert p.getDirPostal()==1040
-        p.setInstitucion('UCV')
-        assert p.getInstitucion()=='UCV'
-        p.setTelefono('584129904589')
-        assert p.getTelefono()=='584129904589'
-        p.setPagina('pagina.usb.ve')
-        assert p.getPagina()=='pagina.usb.ve'
-        p.setPais('Venezuela')
-        assert p.getPais()=='Venezuela'
+        p.set_nombre('patty')
+        assert p.get_nombre()=='patty'
+        p.set_apellido('zambrano')
+        assert p.get_apellido()=='zambrano'
+        p.set_correo('patty@dominio')
+        assert p.get_correo()=='patty@dominio'
+        p.set_dirpostal(1040)
+        assert p.get_dirpostal()==1040
+        p.set_institucion('UCV')
+        assert p.get_institucion()=='UCV'
+        p.set_telefono('584129904589')
+        assert p.get_telefono()=='584129904589'
+        p.set_pagina('pagina.usb.ve')
+        assert p.get_pagina()=='pagina.usb.ve'
+        p.set_pais('Venezuela')
+        assert p.get_pais()=='Venezuela'
         
     # Pruebas para la clase Comite
     def testComite(self):
         # c es un miembro cualquiera del comite para realizar la prueba
         c = Comite(presidente=True,arbitro=True)
         # Probando los get de la clase Comite
-        assert c.getPresidente()==True
-        assert c.getArbitro()==True
+        assert c.get_presidente()==True
+        assert c.get_arbitro()==True
         
         #Probando los set de la clase Comite
-        c.setPresidente(False)
-        assert c.getPresidente()==False
-        c.setArbitro(False)
-        assert c.getArbitro()==False
+        c.set_presidente(False)
+        assert c.get_presidente()==False
+        c.set_arbitro(False)
+        assert c.get_arbitro()==False
 
     # Pruebas para la clase Evaluacion    
     def testEvaluacion(self):
         #e es un elemento de evaluacion2
         e1=Evaluacion([4,5],'Titulo Articulo',['arb1@algo.com','arb2@algo.com','arb3@algo.com'])
         #Probando los get de la clase Evaluacion
-        assert e1.getNotas()==[4,5]
-        assert e1.getArticulo()=='Titulo Articulo'
-        assert e1.getArbitro()==['arb1@algo.com','arb2@algo.com','arb3@algo.com']
-        assert e1.getPromedio()==4.50
+        assert e1.get_notas()==[4,5]
+        assert e1.get_articulo()=='Titulo Articulo'
+        assert e1.get_arbitro()==['arb1@algo.com','arb2@algo.com','arb3@algo.com']
+        assert e1.get_promedio()==4.50
         
         #Probando los set de la clase
         e2=Evaluacion()
-        e2.setNotas(4)
-        assert e2.getNotas()==[4]
-        e2.setArticulo('Juegos Locos')
-        assert e2.getArticulo()=='Juegos Locos'
-        e2.setArbitro('patty@ldc')
-        assert e2.getArbitro()==['patty@ldc']
+        e2.set_notas(4)
+        assert e2.get_notas()==[4]
+        e2.set_articulo('Juegos Locos')
+        assert e2.get_articulo()=='Juegos Locos'
+        e2.set_arbitro('patty@ldc')
+        assert e2.get_arbitro()==['patty@ldc']
         # Probando los otros metodos de la clase
-        e2.setArbitro('oscar@ldc')
-        e2.setNotas(5)
-        e2.setArbitro('loco@ldc')
-        e2.setNotas(5)
-        assert e2.promedioNotas()==4.67
+        e2.set_arbitro('oscar@ldc')
+        e2.set_notas(5)
+        e2.set_arbitro('loco@ldc')
+        e2.set_notas(5)
+        assert e2.promedio_notas()==4.67
         assert e2.aprobado()==True
-        assert e2.arbitroDuplicado('patty@ldc')==True
-        assert e2.arbitroDuplicado('tefi@ldc')==False
-        e2.imprimirArbitros()
+        assert e2.arbitro_duplicado('patty@ldc')==True
+        assert e2.arbitro_duplicado('tefi@ldc')==False
+        e2.imprimir_arbitros()
 
     # Pruebas para la clase CLEI
     def testCLEI(self):
         #c es un elemento de clei
         c=CLEI(2013,4,'Venezuela',4)
         # Probando los get de la clase CLEI
-        assert c.getAnio()==2013
-        assert c.getDuracion()==4
-        assert c.getPais()=='Venezuela'
-        assert c.getMaxArticulos()==4
+        assert c.get_anio()==2013
+        assert c.get_duracion()==4
+        assert c.get_pais()=='Venezuela'
+        assert c.get_maxarticulos()==4
         
         # Probando los set de la clase CLEI
-        c.setAnio(2014)
-        assert c.getAnio()==2014
-        c.setDuracion(5)
-        assert c.getDuracion()==5
-        c.setPais('Uruguay')
-        assert c.getPais()=='Uruguay'
-        c.setMaxArticulos(3)
-        assert c.getMaxArticulos()==3
+        c.set_anio(2014)
+        assert c.get_anio()==2014
+        c.set_duracion(5)
+        assert c.get_duracion()==5
+        c.set_pais('Uruguay')
+        assert c.get_pais()=='Uruguay'
+        c.set_maxarticulos(3)
+        assert c.get_maxarticulos()==3
         
         # Probando los otros metodos de la clase
         e1=Evaluacion([4,5],'Titulo Articulo',['arb1@algo.com','arb2@algo.com'])
-        c.setAceptables(e1)
+        c.set_aceptables(e1)
         e2=Evaluacion([4,5,5],'Juegos Locos',['patty@ldc','oscar@ldc','loco@ldc'])
-        c.setAceptables(e2)
+        c.set_aceptables(e2)
         e3=Evaluacion([3,3],'BD',['arb1@algo.com','patty@ldc'])
-        c.setAceptables(e3)
+        c.set_aceptables(e3)
         e4=Evaluacion([3,3],'SO',['oscar@ldc','arb2@algo.com'])
-        c.setAceptables(e4)
+        c.set_aceptables(e4)
         e5=Evaluacion([2,3],'Articulo malo',['arb1@algo.com','loco@ldc'])
-        c.setAceptables(e5)
-        assert c.getAceptables()==[e1,e2,e3,e4]
-        assert c.calcularOcurrencia(3.00,c.aceptables)==2
-        assert c.getAceptados()==[e2,e1]
-        assert c.getEmpatados([e2,e1])==[e3,e4]
+        c.set_aceptables(e5)
+        assert c.get_aceptables()==[e1,e2,e3,e4]
+        assert c.calcular_ocurrencia(3.00,c.aceptables)==2
+        assert c.get_aceptados()==[e2,e1]
+        assert c.get_empatados([e2,e1])==[e3,e4]
         
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testp1']

@@ -9,7 +9,7 @@ class Persona:
     '''
     classdocs
     '''
-    def __init__(self, nombre=None,apellido=None,correo=None,dirPostal=None,
+    def __init__(self, nombre=None,apellido=None,correo=None,dirpostal=None,
                  institucion=None,telefono=None,pagina=None,pais=None):
         '''
         Constructor
@@ -17,58 +17,58 @@ class Persona:
         self.nombre=nombre
         self.apellido=apellido
         self.correo=correo
-        self.dirPostal=dirPostal
+        self.dirpostal=dirpostal
         self.institucion=institucion
         self.telefono=telefono
         self.pagina=pagina
         self.pais=pais
         
     # Definicion de los metodos get de todos los atributos de la clase
-    def getNombre(self):
+    def get_nombre(self):
         return self.nombre
     
-    def getApellido(self):
+    def get_apellido(self):
         return self.apellido
     
-    def getCorreo(self):
+    def get_correo(self):
         return self.correo
     
-    def getDirPostal(self):
-        return self.dirPostal
+    def get_dirpostal(self):
+        return self.dirpostal
     
-    def getInstitucion(self):
+    def get_institucion(self):
         return self.institucion
     
-    def getTelefono(self):
+    def get_telefono(self):
         return self.telefono
     
-    def getPagina(self):
+    def get_pagina(self):
         return self.pagina
     
-    def getPais(self):
+    def get_pais(self):
         return self.pais
 
     # Definicion de todos los set de los atributos de la clase    
-    def setNombre(self,nombre=None):
+    def set_nombre(self,nombre=None):
         self.nombre=nombre
         
-    def setApellido(self,apellido=None):
+    def set_apellido(self,apellido=None):
         self.apellido=apellido
         
-    def setCorreo(self,correo=None):
+    def set_correo(self,correo=None):
         self.correo=correo
         
-    def setDirPostal(self,dirPostal=None):
-        self.dirPostal=dirPostal
+    def set_dirpostal(self,dirpostal=None):
+        self.dirpostal=dirpostal
         
-    def setInstitucion(self,institucion=None):
+    def set_institucion(self,institucion=None):
         self.institucion=institucion
         
-    def setTelefono(self,telefono=None):
+    def set_telefono(self,telefono=None):
         self.telefono=telefono
         
-    def setPagina(self,pagina=None):
+    def set_pagina(self,pagina=None):
         self.pagina=pagina
         
-    def setPais(self,pais=None):
+    def set_pais(self,pais=None):
         self.pais=pais

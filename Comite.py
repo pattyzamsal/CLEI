@@ -11,26 +11,26 @@ class Comite(Persona):
     '''
     classdocs
     '''
-    def __init__(self, nombre=None,apellido=None,correo=None,dirPostal=None,
+    def __init__(self, nombre=None,apellido=None,correo=None,dirpostal=None,
                  institucion=None,telefono=None,pagina=None,pais=None,presidente=False,arbitro=False):
 
         '''
         Constructor
         '''
-        Persona.__init__(self, nombre, apellido, correo, dirPostal, institucion, telefono, pagina, pais)
+        Persona.__init__(self, nombre, apellido, correo, dirpostal, institucion, telefono, pagina, pais)
         self.presidente=presidente
         self.arbitro=arbitro
         
     # Definicion de los metodos get de todos los atributos de la clase
-    def getPresidente(self):
+    def get_presidente(self):
         return self.presidente
     
-    def getArbitro(self):
+    def get_arbitro(self):
         return self.arbitro
 
     # Definicion de todos los set de los atributos de la clase    
-    def setPresidente(self,presidente=None):
+    def set_presidente(self,presidente=None):
         self.presidente=presidente
     
-    def setArbitro(self,arbitro=None):
+    def set_arbitro(self,arbitro=None):
         self.arbitro=arbitro
